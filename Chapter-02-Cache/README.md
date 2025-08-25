@@ -2,7 +2,7 @@
 
 Implementation of a simple in-memory cache system with TTL (Time To Live) support.
 
-## 🎯 What is Caching?
+## What is Caching?
 
 Caching is a technique that stores frequently accessed data in fast-access storage to improve performance. Benefits include:
 
@@ -10,7 +10,7 @@ Caching is a technique that stores frequently accessed data in fast-access stora
 - **Reduced Load**: Less pressure on primary data sources
 - **Scalability**: Better system performance under load
 
-## 🏗️ Implementation Details
+## Implementation Details
 
 ### Simple In-Memory Cache
 - **Key-Value Storage**: Simple dictionary-based storage
@@ -24,7 +24,7 @@ Client Request → Cache Check → Cache Hit/Miss
               Primary Data Source (if miss)
 ```
 
-## 🚀 Running the Cache
+## Running the Cache
 
 ### Prerequisites
 - Python 3.6+
@@ -47,7 +47,7 @@ pip install fastapi uvicorn requests pydantic
 uvicorn cache:app --reload --port 8000
 ```
 
-## 🔧 Code Structure
+## Code Structure
 
 ### SimpleCache Class
 ```python
@@ -63,7 +63,7 @@ class SimpleCache:
 - **PUT /put/**: Store article in cache
 - **Automatic Fetching**: Fetches from server if not cached
 
-## 🧪 Testing
+## Testing
 
 ### Simple Cache Tests
 ```bash
@@ -87,7 +87,7 @@ curl -X PUT "http://localhost:8000/put/" \
   -d '{"url": "https://example.com", "content": "Cached content"}'
 ```
 
-## 📊 Cache Performance
+## Cache Performance
 
 ### Cache Hit/Miss Scenarios
 ```
@@ -101,14 +101,14 @@ Cache EXPIRED: Data expired, needs refresh
 - **Cache Miss**: ~100-500ms (network + processing)
 - **Memory Usage**: Proportional to cached data size
 
-## 🔍 Monitoring
+## Monitoring
 
 The cache provides console output showing:
 - Cache hits and misses
 - TTL expiration events
 - Cache size changes
 
-## 🚀 Production Considerations
+## Production Considerations
 
 For production use, consider:
 - **Redis/Memcached**: Distributed caching
@@ -117,7 +117,7 @@ For production use, consider:
 - **Monitoring**: Cache hit rates and performance metrics
 - **Persistence**: Cache persistence across restarts
 
-## 📚 Related Concepts
+## Related Concepts
 
 - **Cache Hit Rate**: Percentage of requests served from cache
 - **Cache Invalidation**: Removing stale data from cache
@@ -125,7 +125,7 @@ For production use, consider:
 - **Write-Behind Cache**: Delayed write to storage
 - **Cache Warming**: Pre-loading frequently accessed data
 
-## 🔗 API Endpoints (FastAPI)
+## API Endpoints (FastAPI)
 
 ### GET /get/
 Retrieve cached article by URL

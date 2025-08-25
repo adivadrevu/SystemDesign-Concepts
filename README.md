@@ -2,7 +2,7 @@
 
 A comprehensive collection of system design concepts, algorithms, and implementations with hands-on projects.
 
-## 📚 Chapters
+## Chapters
 
 ### Chapter 1: Load Balancer
 - **Round-Robin Load Balancer** - A simple HTTP load balancer that distributes requests across multiple backend servers using round-robin algorithm
@@ -13,7 +13,7 @@ A comprehensive collection of system design concepts, algorithms, and implementa
 ### Chapter 4: Rate Limiting
 - **Token Bucket Algorithm** - A thread-safe implementation of the Token Bucket rate limiting algorithm using Test-Driven Development (TDD)
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Quick Setup
 ```bash
@@ -46,7 +46,7 @@ python test_simple.py
 python demo.py
 ```
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 SystemDesign-Concepts/
@@ -71,14 +71,14 @@ SystemDesign-Concepts/
 └── README.md                      # Main documentation
 ```
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Python 3.8+** - Primary programming language
 - **uv** - Fast Python package manager
 - **pytest** - Testing framework
 - **Threading** - For concurrent operations
 
-## 📖 Learning Path
+## Learning Path
 
 1. **Start with Chapter 1** - Load Balancer concepts and round-robin distribution
 2. **Continue with Chapter 2** - Caching strategies and TTL implementation
@@ -87,7 +87,7 @@ SystemDesign-Concepts/
 5. **Run demos** - See algorithms in action
 6. **Experiment** - Modify parameters and observe behavior
 
-## 🤝 Contributing
+## Contributing
 
 Feel free to contribute by:
 - Adding new chapters
@@ -95,10 +95,12 @@ Feel free to contribute by:
 - Adding more test cases
 - Enhancing documentation
 
-## 📄 License
+<!-- 
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
+-->
 
 ---
 
-**Happy Learning! 🎉**
+**Happy Learning!**

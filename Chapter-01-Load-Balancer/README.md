@@ -2,7 +2,7 @@
 
 A simple round-robin load balancer implementation that distributes incoming requests across multiple backend servers.
 
-## 🎯 What is a Load Balancer?
+## What is a Load Balancer?
 
 A load balancer is a device or software that distributes network traffic across multiple servers to ensure no single server bears too much load. This improves:
 
@@ -10,7 +10,7 @@ A load balancer is a device or software that distributes network traffic across 
 - **Performance**: Distributes load evenly across servers
 - **Scalability**: Easy to add/remove servers
 
-## 🏗️ Implementation Details
+## Implementation Details
 
 ### Round-Robin Algorithm
 - Distributes requests sequentially across backend servers
@@ -27,7 +27,7 @@ Client Request → Load Balancer (Port 9000)
    "Red Server"             "Blue Server"
 ```
 
-## 🚀 Running the Load Balancer
+## Running the Load Balancer
 
 ### Prerequisites
 - Python 3.6+
@@ -57,7 +57,7 @@ You should see alternating responses:
 - `<h1 style='color:red;'>Red Server - Server 1</h1>`
 - `<h1 style='color:blue;'>Blue Server - Server 2</h1>`
 
-## 🔧 Code Structure
+## Code Structure
 
 ### Key Components
 
@@ -76,7 +76,7 @@ You should see alternating responses:
    Client → LoadBalancer → Backend Server → Response
    ```
 
-## 🧪 Testing Scenarios
+## Testing Scenarios
 
 ### Basic Functionality
 - ✅ Round-robin distribution
@@ -92,14 +92,14 @@ done
 wait
 ```
 
-## 🔍 Monitoring
+## Monitoring
 
 The load balancer provides console output showing:
 - Backend server startup
 - Request routing decisions
 - Error messages for failed backends
 
-## 🚀 Production Considerations
+## Production Considerations
 
 For production use, consider:
 - **Health checks** for backend servers
@@ -108,7 +108,7 @@ For production use, consider:
 - **Metrics and monitoring**
 - **Auto-scaling integration**
 
-## 📚 Related Concepts
+## Related Concepts
 
 - **Health Checks**: Verify backend server availability
 - **Session Affinity**: Route same user to same server
