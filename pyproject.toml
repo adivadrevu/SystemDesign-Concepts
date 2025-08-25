@@ -1,0 +1,47 @@
+[project]
+name = "system-design-concepts"
+version = "0.1.0"
+description = "Comprehensive collection of system design concepts, algorithms, and implementations"
+authors = [
+    {name = "Aditya Vadrevu", email = "aditya.vadrevu@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.32.0",
+    "fastapi>=0.115.0",
+    "uvicorn>=0.34.0",
+    "pydantic>=2.11.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.3",
+    "pytest-cov>=4.1.0",
+    "coverage>=7.10.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "Chapter-04-Rate-Limiting/Token-Bucket/tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+
+[tool.coverage.run]
+source = ["Chapter-04-Rate-Limiting/Token-Bucket/token_bucket"]
+omit = ["tests/*", "*/tests/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]

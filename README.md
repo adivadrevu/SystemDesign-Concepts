@@ -15,7 +15,19 @@ A comprehensive collection of system design concepts, algorithms, and implementa
 
 ## 🚀 Getting Started
 
-Each chapter contains its own projects with specific setup instructions. Navigate to the chapter folder to get started:
+### Quick Setup
+```bash
+# Run the setup script (recommended)
+./setup.sh
+
+# Or manually setup with uv
+uv sync --dev
+source .venv/bin/activate
+```
+
+### Running Chapters
+
+Each chapter contains its own projects with specific setup instructions:
 
 ```bash
 # For Chapter 1 - Load Balancer
@@ -25,10 +37,13 @@ python load_balancer.py
 # For Chapter 2 - Cache
 cd Chapter-02-Cache
 python simple_cache.py
+# Or run FastAPI version:
+uvicorn cache:app --reload
 
 # For Chapter 4 - Rate Limiting
 cd Chapter-04-Rate-Limiting/Token-Bucket
 python test_simple.py
+python demo.py
 ```
 
 ## 📁 Repository Structure
