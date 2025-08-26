@@ -1,7 +1,4 @@
 #!/usr/bin/env python3
-"""
-Demo script showcasing the TokenBucket rate limiting algorithm
-"""
 
 import time
 import threading

@@ -2,6 +2,8 @@
 
 A comprehensive collection of system design concepts, algorithms, and implementations with hands-on projects.
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/adivadrevu/SystemDesign-Concepts)
+
 ## Chapters
 
 ### Chapter 1: Load Balancer
@@ -15,7 +17,10 @@ A comprehensive collection of system design concepts, algorithms, and implementa
 
 ## Getting Started
 
-### Quick Setup
+### Option 1: Run Directly from GitHub (Recommended)
+Click the button above to open in **GitHub Codespaces** - run code directly in your browser!
+
+### Option 2: Local Setup
 ```bash
 # Run the setup script (recommended)
 ./setup.sh
